@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./country.css";
-import Pagination from "./Pagination";
+
 // import "bootstrap/dist/css/bootstrap.min.css";
 function Country() {
   const [countries, setCountries] = useState([]);
-  const [paginationRecords, setPaginationRecords] = useState([]);
+  
   //fetching data
   async function fetchData() {
     const response = await fetch("https://restcountries.com/v3.1/all");
@@ -25,10 +25,7 @@ function Country() {
   const TotalPage = Math.ceil(countries.length / recordsPerPage);
   const numbers = [...Array(TotalPage + 1).keys()].slice(1);
   //functionality part for pagination
-  function updatePaginationRecords(records) {
-    console.log(records);
-    setPaginationRecords(records);
-  }
+  
 
   return (
     <>
@@ -47,13 +44,7 @@ function Country() {
         ))}
       </div>
 
-      <Pagination
-        countries={countries}
-        numbers={numbers}
-        TotalPage={TotalPage}
-        currentpage={currentpage}
-        setCurrentpage={setCurrentpage}
-      />
+      
     </>
   );
 }
