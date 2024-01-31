@@ -16,15 +16,7 @@ function Country() {
     fetchData();
   }, []);
 
-  //pagination
-  const [currentpage, setCurrentpage] = useState(1);
-  const recordsPerPage = 18;
-  const lastIndex = currentpage * recordsPerPage;
-  const firstIndex = lastIndex - recordsPerPage;
-  const records = countries.slice(firstIndex, lastIndex);
-  const TotalPage = Math.ceil(countries.length / recordsPerPage);
-  const numbers = [...Array(TotalPage + 1).keys()].slice(1);
-  //functionality part for pagination
+  
   
 
   return (

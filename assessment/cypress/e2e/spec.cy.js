@@ -1,6 +1,6 @@
 describe("Countries App", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:3000");
+    cy.visit("https://country-flag-app.vercel.app/");
   });
 
   describe("Loading and Initial Display", () => {
@@ -46,7 +46,7 @@ describe("Countries App", () => {
         forceNetworkError: true,
       }).as("getFailedCountries");
 
-      cy.visit("http://localhost:3000");
+      cy.visit("https://country-flag-app.vercel.app/");
 
       // Wait for the intercepted API call
       cy.wait("@getFailedCountries");
