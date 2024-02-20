@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from "react";
 import "./country.css";
 
-// import "bootstrap/dist/css/bootstrap.min.css";
 function Country() {
   const [countries, setCountries] = useState([]);
-  
-  //fetching data
+
+  // Fetching data
   async function fetchData() {
-    const response = await fetch("https://restcountries.com/v3.1/all");
-    const data = await response.json();
-    console.log(data);
-    setCountries(data);
+    try {
+      const response = await fetch("https://restcountries.com/v3.1/all");
+      const data = await response.json();
+      setCountries(data);
+    } catch (error) {
+     
+    }
   }
+
   useEffect(() => {
     fetchData();
   }, []);
-
-  
-  
 
   return (
     <>
       <h1>Country Flag</h1>
 
       <div className="country-container">
-        {records.map((country, idx) => (
+        {countries.map((country, idx) => (
           <div key={idx} className="country">
             <img
               src={country.flags.png}
@@ -35,9 +35,9 @@ function Country() {
           </div>
         ))}
       </div>
-
-      
     </>
   );
 }
+
 export default Country;
+

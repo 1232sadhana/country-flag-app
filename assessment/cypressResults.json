@@ -1,0 +1,208 @@
+{
+  "browserName": "electron",
+  "browserPath": "",
+  "browserVersion": "114.0.5735.289",
+  "config": {
+    "projectRoot": "/workspaces/country-flag-app/assessment",
+    "projectName": "assessment",
+    "configFile": "cypress.config.js",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "x64",
+    "baseUrl": null,
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultCommandTimeout": 4000,
+    "downloadsFolder": "/workspaces/country-flag-app/assessment/cypress/downloads",
+    "env": {},
+    "execTimeout": 60000,
+    "experimentalCspAllowList": false,
+    "experimentalFetchPolyfill": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalMemoryManagement": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "experimentalSkipDomainInjection": null,
+    "experimentalOriginDependencies": false,
+    "experimentalSourceRewriting": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalStudio": false,
+    "experimentalWebKitSupport": false,
+    "fileServerFolder": "/workspaces/country-flag-app/assessment",
+    "fixturesFolder": "/workspaces/country-flag-app/assessment/cypress/fixtures",
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "keystrokeDelay": 0,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "linux",
+    "pageLoadTimeout": 60000,
+    "port": 41595,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "/usr/local/share/nvm/versions/node/v20.11.0/bin/node",
+    "resolvedNodeVersion": "20.11.0",
+    "responseTimeout": 30000,
+    "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "/workspaces/country-flag-app/assessment/cypress/screenshots",
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "supportFile": "/workspaces/country-flag-app/assessment/cypress/support/e2e.js",
+    "taskTimeout": 60000,
+    "testIsolation": true,
+    "trashAssetsBeforeRuns": true,
+    "userAgent": null,
+    "video": false,
+    "videoCompression": false,
+    "videosFolder": "/workspaces/country-flag-app/assessment/cypress/videos",
+    "viewportHeight": 660,
+    "viewportWidth": 1000,
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "specPattern": "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 114,
+        "name": "electron",
+        "path": "",
+        "version": "114.0.5735.289"
+      }
+    ],
+    "cypressBinaryRoot": "/home/codespace/.cache/Cypress/13.6.4/Cypress/resources/app",
+    "hosts": null,
+    "isInteractive": true,
+    "version": "13.6.4",
+    "testingType": "e2e",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "13.6.4",
+  "endedTestsAt": "2024-02-20T16:30:48.846Z",
+  "osName": "linux",
+  "osVersion": "Ubuntu - ",
+  "runs": [
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 5,
+        "tests": 4,
+        "passes": 3,
+        "pending": 0,
+        "failures": 1,
+        "start": "2024-02-20T16:30:42.074Z",
+        "end": "2024-02-20T16:30:48.849Z",
+        "duration": 6775
+      },
+      "screenshots": [
+        {
+          "height": 720,
+          "name": null,
+          "path": "/workspaces/country-flag-app/assessment/cypress/screenshots/spec.cy.js/Countries App -- API Error Handling -- logs an error to the console on API failure (failed).png",
+          "takenAt": "2024-02-20T16:30:48.599Z",
+          "width": 1280
+        }
+      ],
+      "spec": {
+        "absolute": "/workspaces/country-flag-app/assessment/cypress/e2e/spec.cy.js",
+        "fileExtension": ".js",
+        "fileName": "spec",
+        "name": "spec.cy.js",
+        "relative": "cypress/e2e/spec.cy.js"
+      },
+      "stats": {
+        "duration": 6778,
+        "endedAt": "2024-02-20T16:30:48.846Z",
+        "failures": 1,
+        "passes": 3,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2024-02-20T16:30:42.068Z",
+        "suites": 5,
+        "tests": 4
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2895,
+          "state": "passed",
+          "title": [
+            "Countries App",
+            "Loading and Initial Display",
+            "makes an API call and displays initial content"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1209,
+          "state": "passed",
+          "title": [
+            "Countries App",
+            "Flag Display",
+            "displays country flags with alt text"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 154,
+          "state": "passed",
+          "title": [
+            "Countries App",
+            "Country Name Display",
+            "displays country names"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: expected false to be true\n    at Context.eval (webpack:///./cypress/e2e/spec.cy.js:57:65)",
+          "duration": 375,
+          "state": "failed",
+          "title": [
+            "Countries App",
+            "API Error Handling",
+            "logs an error to the console on API failure"
+          ]
+        }
+      ],
+      "video": null
+    }
+  ],
+  "startedTestsAt": "2024-02-20T16:30:42.068Z",
+  "totalDuration": 6778,
+  "totalFailed": 1,
+  "totalPassed": 3,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 5,
+  "totalTests": 4
+}
